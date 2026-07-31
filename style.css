@@ -3,8 +3,9 @@
     --tile-color: #053420;
     --tile-hover: #1aa169;
     --accent-color: #42f4b6;
-    --text-color: #053420;
+    --text-color: #fff;
     --category-color: #42f4b6;
+    --shadow-color: #0aa66f;
 }
 
 * {
@@ -17,15 +18,15 @@ body {
     margin: 0;
     font-family: "Black Ops One", fantasy;
     text-align: center;
-    text-shadow: 0 0 4px var(--accent-color);
+    text-shadow: 0 0 4px var(--shadow-color);
 }
 
 header h1 {
     padding: 30px 0;
     text-shadow: 
-        0 0 8px var(--accent-color),
-        0 0 20px var(--accent-color),
-        0 0 40px var(--accent-color);
+        0 0 8px var(--shadow-color),
+        0 0 20px var(--shadow-color),
+        0 0 40px var(--shadow-color);
 }
 
 /* Rules Section */
@@ -47,7 +48,7 @@ header h1 {
 #board, .challenge {
     border: 2px solid var(--accent-color);
     box-shadow:
-        0 0 15px var(--accent-color),
+        0 0 15px var(--shadow-color),
         inset 0 0 20px var(--bg-color);
 }
 
