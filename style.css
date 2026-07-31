@@ -41,6 +41,7 @@ th {
     color: var(--text-color);
     padding: 16px;
     font-size: 0.9rem;
+    border-radius: 10px;
 }
 
 td a {
@@ -48,12 +49,12 @@ td a {
     width: 100px;
     height: 60px;
     line-height: 60px;
-    background-color: var(--bg-color);
+    background-color: var(--tile-color);
     color: var(--accent-color);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.4rem;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 td a:hover {
