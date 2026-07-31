@@ -1,7 +1,7 @@
 :root {
     --bg-color: #000;
     --tile-color: #09653f;
-    --tile-hover: #09653f;
+    --tile-hover: #000;
     --accent-color: #42f4b6;
     --text-color: #42f4b6;
     --category-color: #42f4b6;
@@ -26,7 +26,7 @@ header h1 {
 /* Rules Section */
 #rules {
     max-width: 700px;
-    margin: 0 auto 40px;
+    margin: 0 auto 75px;
     text-align: left;
 }
 
@@ -37,7 +37,7 @@ table {
 }
 
 th {
-    background-color: var(--bg-color);
+    background-color: var(--tile-color);
     color: var(--text-color);
     padding: 16px;
     font-size: 0.9rem;
