@@ -1,0 +1,75 @@
+:root {
+    --bg-color: #000;
+    --tile-color: #1ce39d;
+    --tile-hover: #0d739e;
+    --accent-color: #20a3a8;
+    --text-color: #08686b;
+    --category-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+header h1 {
+    padding: 30px 0;
+}
+
+/* Rules Section */
+#rules {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: left;
+}
+
+/* Jeopardy Board */
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 16px;
+    font-size: 0.9rem;
+}
+
+td a {
+    display: block;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-radius: 10px;
+}
+
+td a:hover {
+    background-color: var(--tile-hover);
+}
+
+/* Challenge Boxes */
+.challenge {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 24px;
+    background-color: var(--tile-color);
+    border-radius: 16px;
+    text-align: left;
+}
+
+.challenge a {
+    color: var(--accent-color);
+}
