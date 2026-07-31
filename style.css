@@ -1,7 +1,7 @@
 :root {
     --bg-color: #000;
     --tile-color: #09653f;
-    --tile-hover: #000;
+    --tile-hover: #1aa169;
     --accent-color: #42f4b6;
     --text-color: #42f4b6;
     --category-color: #42f4b6;
@@ -32,7 +32,7 @@ header h1 {
 
 /* Jeopardy Board */
 #board {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 40px;
     padding: 30px;
     background: var(--tile-color);
