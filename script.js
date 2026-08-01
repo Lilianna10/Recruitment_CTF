@@ -214,3 +214,53 @@ window.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('#intro p, #rules p, #form p');
   revealSections(sections, 500);
 });
+
+/* ==== Matrix Rain Background ==== */
+const canvas = document.getElementById('matrix-bg');
+const ctx = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const chars = "1ア#2ウエ3オカ4キク5ケコ6$7@カ8&エ9クコ0イ%";
+const fontSize = 18;
+const columns = Math.floor(canvas.width / fontSize);
+const drops = Array(columns).fill(1);
+
+function drawMatrix() {
+  ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  ctx.fillStyle = "#42f486";
+  ctx.font = fontSize + "px monospace";
+
+  for (let i = 0; i < drops.length; i++) {
+    const text = chars.charAt(Math.floor(Math.random() * chars.length));
+    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+      drops[i] = 0;
+    }
+    drops[i]++;
+  }
+}
+
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+let matrixInterval;
+if (!prefersReducedMotion) {
+  matrixInterval = setInterval(drawMatrix, 50);
+}
+
+document.addEventListener('visibilitychange', () => {
+  if (!matrixInterval && !document.hidden && !prefersReducedMotion) {
+    matrixInterval = setInterval(drawMatrix, 50);
+  } else if (document.hidden && matrixInterval) {
+    clearInterval(matrixInterval);
+    matrixInterval = null;
+  }
+});
+
+windows.addEventListener('resize', () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
