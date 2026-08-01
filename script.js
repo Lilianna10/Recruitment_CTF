@@ -172,3 +172,45 @@ document.querySelectorAll('#board a[href^="#"]').forEach(link => {
     }
   });
 });
+
+/* ==== Typewriter effect for the title ====*/
+function typeWriter(element, speed = 50) {
+  const text = element.textContent;
+  element.textContent = '';
+  let i = 0;
+  function typeNextChar() {
+    if (i < text.length) {
+      element.textContent += text.charAt(i);
+      i++;
+      setTimeout(typeNextChar, speed);
+    }
+  }
+  typeNextChar();
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const title = document.querySelector('header h1');
+  typeWriter(title, 50);
+});
+
+/* ===== Reveal rules and introduction test as page loads ===== */
+function revealSections(elements, delay = 300) {
+  elements.forEach(el => {
+    el.style.opacity = "0";
+    el.style.transition = "opacity 0.4s ease";
+  });
+  let i = 0;
+  function revealNext() {
+    if (i < elements.length) {
+      elements[i].style.opacity = "1";
+      i++;
+      setTimeout(revealNext, delay);
+    }
+  }
+  revealNext();
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('#intro p, #rules p, #form p');
+  revealSections(sections, 300);
+});
