@@ -159,3 +159,16 @@ function refreshUIState() {
   return total;
 }
 refreshUIState();
+
+/* ===== Center challenge sections when clicked from the board ===== */
+document.querySelectorAll('#board a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').slice(1);
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      history.pushState(null, '', '#' + targetId);
+    }
+  });
+});
