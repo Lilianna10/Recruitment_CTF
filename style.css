@@ -94,6 +94,10 @@ td a {
     border: 1px solid var(--accent-color);
 }
 
+td, th {
+    padding: 0;
+}
+
 td a:hover {
     background-color: var(--tile-hover);
 }
