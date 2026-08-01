@@ -38,6 +38,7 @@ header h1 {
     max-width: 700px;
     margin: 0 auto 75px;
     text-align: left;
+    text-shadow: 0 0 8px var(--shadow-color);
 }
 
 /* Jeopardy Board */
