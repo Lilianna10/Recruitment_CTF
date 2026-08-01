@@ -1,9 +1,30 @@
 # Recruitment_CTF
-Recruitment CTF for a cybersecurity club I run.
+Recruitment CTF for a cybersecurity club I run. These are the rules and some helpful tips for users.
 
-# Rules
-1. Please do not copy and paste questions or challenges into any AI (ChatGPT, Gemini, CoPilot, etc.).
-2. Don't share answers with others.
-3. Have fun! :D
+## Rules
+1. Pick any challenge in any order. Find the flag to solve it, then submit it using the Google Form.
+2. Flags are formatted as: **CTF{answer}**.
+    *Note: ```CTF{}``` is part of the answer.*
+3. Answers are **case-insensitive**. I will review flags for correct answers and hand out rewards during the first club meeting.
+4. There are **no penalties** for incorrect answers or using hints.
+5. AI and Google **are allowed.**
+    *Please do **not** copy and paste an entire challenge directly into AI.*
+6. Please do **not** share answers so others can enjoy the CTF.
+7. Please do **not** spam random guesses into the Google Form.
+8. Lastly, have fun! If you need any hints or help you can message me on Teams.
 
-Note: to the person who decided to come to my GitHub page for flag answers, please don't spoil anything for anyone else. Thank you!
+**Friendly Message:** Don't worry if you've never done a CTF before; every challenge is designed to teach you something, and hints are always available!
+
+## Helpful Tips for each of the categories
+### Web Exploitation (Web Exploit / Web)
+>Web Exploitation is the practice of identifying and leveraging security vulnerabilities, design flaws, or misconfigurations within web applications.
+* **Every** modern browser includes *developer tools* that can help inspect websites.
+### Cryptography (Crypto)
+>Cryptography is the practice of hiding and protecting data using math and computer codes.
+* The "Challenge:" portion has the encrypted or encoded version of the flag. Decrypt or decode the flag to get the answer. :D
+### OSINT (Open Source Intelligence)
+>OSINT is the practice of collecting, processing, and analyzing publicly available information.
+* Google is a **VERY** powerful tool. *(**Not** talking about Gemini AI.)*
+### Forensics
+>Forensics is the collection, preservation, and analysis of digital evidence from electronic devices.
+* Part of forensics is knowing **what** you are looking for.
