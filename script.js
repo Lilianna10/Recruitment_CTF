@@ -217,15 +217,26 @@ window.addEventListener('DOMContentLoaded', () => {
 /* ==== Matrix Rain Background ==== */
 const canvas = document.getElementById('matrix-bg');
 const ctx = canvas.getContext('2d');
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
 const chars = "1ア#2ウエ3オカ4キク5ケコ6$7@カ8&エ9クコ0イ%";
 const secretFlag = "CTF{fL@g_h3rE}";
 const fontSize = 18;
-const columns = Math.floor(canvas.width / fontSize);
-const drops = Array(columns).fill(1);
+const drops = [];
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const newColumns = Math.floor(canvas.width / fontSize);
+  drops.length = newColumns;
+  for (let  i = 0; i < newColumns; i++) {
+    if (drops[i] === undefined) {
+      drops[i] = 1;
+    }
+  }
+}
+
+resizeCanvas();
+windows.addEventListener('resize', resizeCanvas);
 
 function drawMatrix() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
@@ -258,9 +269,4 @@ document.addEventListener('visibilitychange', () => {
     clearInterval(matrixInterval);
     matrixInterval = null;
   }
-});
-
-windows.addEventListener('resize', () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
 });
