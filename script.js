@@ -49,8 +49,8 @@ function initCookieSettings() {
   }
   document.cookie = "theme=dark; path=/";
   document.cookie = "visited=true; path=/";
-  document.cookie = "reward=" + atob("Q1RGe3lVbU1tWV9DME9raTNzfQ==") + "; path=/";
-  document.cookie = "reward=" + atob("ZmxhZ3tjMDBrMWVzX2FyZV9kZWxpY2lvdXN9") + "; path=/";
+  document.cookie = "sessionCache=" + atob("Q1RGe3lVbU1tWV9DME9raTNzfQ==") + "; path=/";
+  document.cookie = "browserCache=" + atob("ZmxhZ3tjMDBrMWVzX2FyZV9kZWxpY2lvdXN9") + "; path=/";
   document.cookie = "layout=grid; path=/";
 }
 initCookieSettings();
