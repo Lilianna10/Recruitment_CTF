@@ -1,7 +1,7 @@
 :root {
     --bg-color: #000;
     --tile-color: #05340d;
-    --tile-hover: #1aa13c;
+    --tile-hover: #fff;
     --accent-color: #42f486;
     --text-color: #fff;
     --category-color: #42f486;
@@ -104,8 +104,8 @@ td, th {
     padding: 0;
 }
 
-td a:hover {
-    background-color: var(--tile-hover);
+td a:hover .reward {
+    filter: hue-rotate(180deg) saturate(2) brightness(1.6) drop-shadow(0 0 14px var(--shadow-color)) drop-shadow(0 0 24px var(--tile-hover));
 }
 
 td:empty {
@@ -114,6 +114,7 @@ td:empty {
 }
 
 .reward {
+    transition: filter 0.3s ease;
     font-size: 1.4rem;
     font-weight: bold;
     text-shadow: none;
