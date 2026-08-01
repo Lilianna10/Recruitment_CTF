@@ -97,6 +97,11 @@ td a:hover {
     background-color: var(--tile-hover);
 }
 
+.reward {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
 /* Fixing colors of other links */
 a {
     color: var(--text-color);
