@@ -53,7 +53,7 @@ a:visited {
 }
 
 /* Form Section */
-#form {
+#form, #intro {
     text-shadow: 
         0 0 8px var(--shadow-color),
         0 0 20px var(--shadow-color),
