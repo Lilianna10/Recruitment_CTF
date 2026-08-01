@@ -37,6 +37,7 @@ header h1 {
 #rules, #form, #intro {
     max-width: 700px;
     margin: 0 auto 75px;
+    font-weight: bold;
     text-shadow: 
         0 0 8px var(--shadow-color),
         0 0 20px var(--shadow-color),
@@ -110,7 +111,7 @@ td:empty {
 .reward {
     font-size: 1.4rem;
     font-weight: bold;
-    filter: hue-rotate(120deg) saturate(2) brightness(1.2);
+    filter: hue-rotate(120deg) saturate(2) brightness(2);
 }
 
 /* Fixing colors of other links */
