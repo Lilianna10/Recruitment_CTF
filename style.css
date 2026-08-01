@@ -105,7 +105,7 @@ td, th {
 }
 
 td a:hover .reward {
-    filter: hue-rotate(180deg) saturate(2) brightness(1.6) drop-shadow(0 0 14px var(--shadow-color)) drop-shadow(0 0 24px var(--tile-hover));
+    filter: hue-rotate(180deg) saturate(2) brightness(1.8) drop-shadow(0 0 14px var(--shadow-color)) drop-shadow(0 0 30px var(--tile-hover));
 }
 
 td:empty {
