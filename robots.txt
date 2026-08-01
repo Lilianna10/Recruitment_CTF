@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /secret-flags/
+Allow: index.html
+# CTF{r0bOtZ_sH@lL_rUL3}
