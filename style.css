@@ -46,7 +46,18 @@ a:visited {
     max-width: 700px;
     margin: 0 auto 75px;
     text-align: left;
-    text-shadow: 0 0 8px var(--shadow-color);
+    text-shadow: 
+        0 0 8px var(--shadow-color),
+        0 0 20px var(--shadow-color),
+        0 0 40px var(--shadow-color);
+}
+
+/* Form Section */
+#form {
+    text-shadow: 
+        0 0 8px var(--shadow-color),
+        0 0 20px var(--shadow-color),
+        0 0 40px var(--shadow-color);
 }
 
 /* Jeopardy Board */
