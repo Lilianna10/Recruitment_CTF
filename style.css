@@ -31,6 +31,7 @@ body {
 }
 
 header h1 {
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
     padding: 30px 0;
     text-shadow: 
         0 0 8px var(--shadow-color),
@@ -40,8 +41,9 @@ header h1 {
 
 /* Rules, Form, and Intro Section */
 #rules, #form, #intro {
-    max-width: 700px;
+    max-width: clamp(400px, 60vw, 900px);
     margin: 0 auto 75px;
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
     font-weight: bold;
     text-shadow: 
         0 0 8px var(--shadow-color),
@@ -55,7 +57,7 @@ header h1 {
 
 /* Jeopardy Board */
 #board {
-    max-width: 1400px;
+    max-width: clamp(700px, 90vw, 2200px);
     margin: 40px;
     background: var(--tile-color);
     border-radius: 20px;
@@ -96,7 +98,6 @@ td a {
     background-color: var(--tile-color);
     color: var(--accent-color);
     font-weight: bold;
-    font-size: 1rem;
     border: 1px solid var(--accent-color);
 }
 
@@ -115,7 +116,7 @@ td:empty {
 
 .reward {
     transition: filter 0.3s ease;
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 2vw, 2.2rem);
     font-weight: bold;
     text-shadow: none;
     filter: hue-rotate(180deg) saturate(2) brightness(1.4) drop-shadow(0 0 8px var(--shadow-color));
@@ -132,7 +133,7 @@ a:visited {
 
 /* Challenge Boxes */
 .challenge {
-    max-width: 500px;
+    max-width: clamp(350px, 50vw, 650px);
     margin: 30px auto;
     padding: 24px;
     background-color: var(--tile-color);
