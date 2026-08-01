@@ -57,8 +57,8 @@ header h1 {
 
 /* Jeopardy Board */
 #board {
-    max-width: clamp(700px, 90vw, 2200px);
-    margin: 40px;
+    max-width: clamp(700px, 90vw, 2400px);
+    margin: 40px auto;
     background: var(--tile-color);
     border-radius: 20px;
     overflow: hidden;
