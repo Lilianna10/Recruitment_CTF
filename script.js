@@ -190,7 +190,7 @@ function typeWriter(element, speed = 50) {
 
 window.addEventListener('DOMContentLoaded', () => {
   const title = document.querySelector('header h1');
-  typeWriter(title, 50);
+  typeWriter(title, 100);
 });
 
 /* ===== Reveal rules and introduction test as page loads ===== */
@@ -212,5 +212,5 @@ function revealSections(elements, delay = 300) {
 
 window.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('#intro p, #rules p, #form p');
-  revealSections(sections, 300);
+  revealSections(sections, 500);
 });
