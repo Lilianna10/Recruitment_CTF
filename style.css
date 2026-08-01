@@ -33,14 +33,6 @@ header h1 {
         0 0 40px var(--shadow-color);
 }
 
-a {
-    color: var(--text-color);
-}
-
-a:visited {
-    color: var(--text-color);
-}
-
 /* Rules, Form, and Intro Section */
 #rules, #form, #intro {
     max-width: 700px;
@@ -94,6 +86,7 @@ td a {
     width: 120px;
     height: 90px;
     padding: 8px;
+    text-decoration: none;
     background-color: var(--tile-color);
     color: var(--accent-color);
     font-weight: bold;
@@ -108,6 +101,15 @@ td {
 
 td a:hover {
     background-color: var(--tile-hover);
+}
+
+/* Fixing colors of other links */
+a {
+    color: var(--text-color);
+}
+
+a:visited {
+    color: var(--text-color);
 }
 
 /* Challenge Boxes */
