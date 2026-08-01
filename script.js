@@ -80,7 +80,6 @@ function scheduleRender() {
 for (let f = 0; f < 8; f++) {
   scheduleRender();
 }
-const secretFlag = "CTF{fL@g_h3rE}";
 const networkStats = {
   latencyMs: 42,
   packetsReceived: 0,
@@ -223,6 +222,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const chars = "1ア#2ウエ3オカ4キク5ケコ6$7@カ8&エ9クコ0イ%";
+const secretFlag = "CTF{fL@g_h3rE}";
 const fontSize = 18;
 const columns = Math.floor(canvas.width / fontSize);
 const drops = Array(columns).fill(1);
