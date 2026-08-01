@@ -22,7 +22,7 @@ body {
     margin: 0;
     font-family: "Ubuntu Mono", monospace;
     text-align: center;
-    text-shadow: 0 0 4px var(--shadow-color);
+    text-shadow: 0 0 8px var(--shadow-color);
 }
 
 header h1 {
