@@ -111,7 +111,8 @@ td:empty {
 .reward {
     font-size: 1.4rem;
     font-weight: bold;
-    filter: hue-rotate(180deg) saturate(2) brightness(1.4);
+    text-shadow: none;
+    filter: hue-rotate(180deg) saturate(2) brightness(1.4) drop-shadow(0 0 8px var(--shadow-color));
 }
 
 /* Fixing colors of other links */
