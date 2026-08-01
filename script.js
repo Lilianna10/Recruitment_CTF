@@ -236,7 +236,7 @@ function resizeCanvas() {
 }
 
 resizeCanvas();
-windows.addEventListener('resize', resizeCanvas);
+window.addEventListener('resize', resizeCanvas);
 
 function drawMatrix() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
