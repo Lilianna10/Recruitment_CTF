@@ -50,7 +50,6 @@ header h1 {
 /* Jeopardy Board */
 #board {
     max-width: 1400px;
-    min-height: 700px;
     margin: 40px;
     background: var(--tile-color);
     border-radius: 20px;
@@ -66,6 +65,7 @@ header h1 {
 
 table {
     border-collapse: separate;
+    border-spacing: 0;
     width: 1387px;
     table-layout: fixed;
 }
@@ -95,6 +95,11 @@ td a {
 
 td a:hover {
     background-color: var(--tile-hover);
+}
+
+td:empty {
+    background-color: var(--tile-color);
+    border: 1px solid var(--accent-color);
 }
 
 .reward {
