@@ -33,6 +33,10 @@ header h1 {
         0 0 40px var(--shadow-color);
 }
 
+a {
+    color: var(--text-color);
+}
+
 /* Rules Section */
 #rules {
     max-width: 700px;
