@@ -37,6 +37,10 @@ a {
     color: var(--text-color);
 }
 
+a:visited {
+    color: var(--text-color);
+}
+
 /* Rules Section */
 #rules {
     max-width: 700px;
