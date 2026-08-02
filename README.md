@@ -17,15 +17,21 @@ Recruitment CTF for a cybersecurity club I run. These are the rules and some hel
 
 ## Helpful Tips for each of the categories
 **Note:** I highly recommend playing on computer, but if you do not have a computer these challenges should work on mobile as well.
+* **All** challenge names and descriptions **contain hints** for how to solve the challenge.
 ### Web Exploitation (Web Exploit / Web)
 >Web Exploitation is the practice of identifying and leveraging security vulnerabilities, design flaws, or misconfigurations within web applications.
-* **Every** modern browser includes *developer tools* that can help inspect websites.
+* **Every** modern browser includes *developer tools* (formal name: DevTools) that can help inspect websites.
+* Burp Suite is an incredible site to practice web exploitation.
+* To read more about web exploits, I suggest searching through the OWASP (Open Worldwide Application Security Protocol) website. OWASP is an NPO that publishes open-source information about web exploitations. Every year they create a list of the Top 10 most critical security risks for websites.
 ### Cryptography (Crypto)
 >Cryptography is the practice of hiding and protecting data using math and computer codes.
 * The "Challenge:" portion has the encrypted or encoded version of the flag. Decrypt or decode the flag to get the answer. :D
+* Some great cryptography tools are: CyberChef and Cryptii.
+>Fun fact: Jim Sanborn made a famous cryptographic structure called Kryptos that is at the CIA Headquarters. The fourth piece of the puzzle has yet to be solved after 35 years.
 ### OSINT (Open Source Intelligence)
 >OSINT is the practice of collecting, processing, and analyzing publicly available information.
 * Google is a **VERY** powerful tool. *(**Not** talking about Gemini AI.)*
 ### Forensics
 >Forensics is the collection, preservation, and analysis of digital evidence from electronic devices.
 * Part of forensics is knowing **what** you are looking for.
+* No external tools are necessary for any of the forensics challenges. However, knowing your way around a terminal will help.
