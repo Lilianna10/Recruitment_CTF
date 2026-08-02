@@ -157,6 +157,7 @@ a:visited {
     background-color: var(--tile-color);
     border-radius: 16px;
     text-align: left;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .challenge a {
@@ -169,5 +170,4 @@ a:visited {
         0 0 30px var(--tile-hover),
         0 0 60px var(--tile-hover),
         inset 0 0 20px var(--bg-color);
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
