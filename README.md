@@ -16,6 +16,7 @@ Recruitment CTF for a cybersecurity club I run. These are the rules and some hel
 **Friendly Message:** Don't worry if you've never done a CTF before; every challenge is designed to teach you something, and hints are always available!
 
 ## Helpful Tips for each of the categories
+**Note:** I highly recommend playing on computer, but if you do not have a computer these challenges should work on mobile as well.
 ### Web Exploitation (Web Exploit / Web)
 >Web Exploitation is the practice of identifying and leveraging security vulnerabilities, design flaws, or misconfigurations within web applications.
 * **Every** modern browser includes *developer tools* that can help inspect websites.
