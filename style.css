@@ -157,6 +157,10 @@ a:visited {
     background-color: var(--tile-color);
     border-radius: 16px;
     text-align: left;
+    box-shadow:
+        0 0 15px var(--tile-hover),
+        0 0 0px var(--tile-hover),
+        inset 0 0 10px var(--bg-color);
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
