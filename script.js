@@ -197,7 +197,7 @@ function typeWriter(element, speed = 50) {
 
 window.addEventListener('DOMContentLoaded', () => {
   const title = document.querySelector('header h1');
-  typeWriter(title, 100);
+  typeWriter(title, 75);
 });
 
 /* ===== Reveal rules and introduction test as page loads ===== */
