@@ -172,6 +172,26 @@ document.querySelectorAll('#board a[href^="#"]').forEach(link => {
   });
 });
 
+document.querySelectorAll('#board a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function () {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').slice(1);
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      history.pushState(null, '', '#' + targetId);
+
+      document.querySelectorAll('.challenge.highlight').forEach(el => {
+        el.classList.remove('highlight');
+      });
+      target.classList.add('highlight');
+      setTimeout(() => {
+        target.classList.remove('highlight');
+      }, 3000);
+    }
+  });
+});
+
 /* ==== Typewriter effect for the title ====*/
 function typeWriter(element, speed = 50) {
   const text = element.textContent;
