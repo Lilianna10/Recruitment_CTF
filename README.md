@@ -5,6 +5,7 @@ Recruitment CTF for a cybersecurity club I run. These are the rules and some hel
 1. Pick any challenge in any order. Find the flag to solve it, then submit it using the Google Form.
 2. Flags are formatted as: **CTF{answer}**.
     *Note: ```CTF{}``` is part of the answer.*
+    *Note: the only flag **not** in LeetSpeak is the "Geography" challenge*
 3. Answers are **case-insensitive**. I will review flags for correct answers and hand out rewards during the first club meeting.
 4. There are **no penalties** for incorrect answers or using hints.
 5. AI and Google **are allowed.**
