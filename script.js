@@ -270,3 +270,10 @@ document.addEventListener('visibilitychange', () => {
     matrixInterval = null;
   }
 });
+
+/* ===== Mark as Done Button Functionality ===== */
+document.querySelectorAll('.mark-done').forEach(button => {
+  button.addEventListener('click', function () {
+    button.closest('.challenge').style.display = "none";
+  });
+});

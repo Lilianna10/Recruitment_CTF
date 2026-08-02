@@ -122,6 +122,24 @@ td:empty {
     filter: hue-rotate(180deg) saturate(2) brightness(1.4) drop-shadow(0 0 8px var(--shadow-color));
 }
 
+.mark-done {
+    font-family: "Ubuntu Mono", monospace;
+    background-color: var(--tile-color);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 8px 14px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.mark-done:hover {
+    background-color: var(--accent-color);
+    color: var(--tile-color);
+    box-shadow: 0 0 10px var(--shadow-color), 0 0 20px var(--shadow-color);
+}
+
 /* Fixing colors of other links */
 a {
     color: var(--text-color);
