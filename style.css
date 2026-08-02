@@ -166,8 +166,8 @@ a:visited {
 .challenge.highlight {
     border-color: var(--tile-hover);
     box-shadow:
-        0 0 30px var(--shadow-color),
-        0 0 60px var(--shadow-color),
+        0 0 30px var(--tile-hover),
+        0 0 60px var(--tile-hover),
         inset 0 0 20px var(--bg-color);
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
